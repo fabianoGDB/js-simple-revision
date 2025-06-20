@@ -16,7 +16,7 @@
 .ld-login>.ld-wrapper>.ld-header>.wrapper{
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
-    background-color: greenyellow;
+    background-color: white;
 }
 .ld-login>.ld-wrapper>.main-content{
     padding-top: var(--ld-header-size);
