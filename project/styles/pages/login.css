@@ -38,5 +38,13 @@
 
 
 .ld-login>.ld-wrapper>.main-content>.right{
-    background-color: brown;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+.ld-login>.ld-wrapper>.main-content>.right>.image{
+    height: 100vh;
+    position: absolute;
 }
