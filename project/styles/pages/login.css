@@ -33,18 +33,23 @@
 
 
 .ld-login>.ld-wrapper>.main-content>.left{
-    background-color: bisque;
+    padding-top: 48px;
 }
 
 
 .ld-login>.ld-wrapper>.main-content>.right{
     overflow: hidden;
     position: relative;
+    height: 100vh;
     
 }
 
 
 .ld-login>.ld-wrapper>.main-content>.right>.image{
-    height: 100vh;
+    min-width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
