@@ -1,4 +1,5 @@
 html{
     background-color: var(--ld-color-gray-lighter);
     font-weight: 500;
+    font-family: var(--font-family-base);
 }
