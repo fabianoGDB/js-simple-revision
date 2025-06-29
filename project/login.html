@@ -22,7 +22,9 @@
     <!-- Base -->
     <link rel="stylesheet" href="styles/base/html.css" />
     <!-- Objects -->
+    <link rel="stylesheet" href="styles/objects/ld-wrapper.css" />
     <!-- Components -->
+    <link rel="stylesheet" href="styles/components/ld-header.css" />
     <link rel="stylesheet" href="styles/components/ld-radio.css" />
     <link rel="stylesheet" href="styles/components/ld-button.css" />
     <link rel="stylesheet" href="styles/components/ld-input.css" />
@@ -42,13 +44,32 @@
         </header>
         <main class="main-content">
           <div class="left">
-            <label class="ld-radio">
-              Dev
-              <input type="radio">
-              <span class="checkmark"></span>
-            </label>
-            <!-- <input type="text" class="ld-input" placeholder="Title"> -->
-            <!-- <button class="ld-button">Continue</button> -->
+            <span class="steps">STEP 1 OF 2</span>
+            <h1 class="main-title">
+              <span class="up">Hello!</span>
+              <span class="down">Regsiter in the form now!</span>
+            </h1>
+
+            <div class="radio-buttons">
+              <h3 class="title">What is your profile</h3>
+              <div class="buttons">
+                <label class="ld-radio">
+                  Dev
+                  <input name="role" type="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="ld-radio">
+                  Client
+                  <input name="role" type="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <input type="text" class="ld-input" placeholder="Title">
+            <input type="date" class="ld-input" placeholder="Birth Date">
+            <input type="email" class="ld-input" placeholder="Email">
+            <input type="password" class="ld-input" placeholder="Password">
+            <button class="ld-button">Continue</button>
           </div>
           <div class="right"><img class="image" src="assets/image/bg-cubes.png" alt="Backgorund for login/singup"></div>
         </main>

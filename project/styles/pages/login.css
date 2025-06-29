@@ -1,55 +1,42 @@
-.ld-login>.ld-wrapper{
-   max-width: var(--ld-main-wrapper); 
-   margin: 0 auto;
-}
-
-.ld-login>.ld-wrapper>.ld-header{
-    height: var(--ld-header-size);
-    width: 100%;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
-
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-.ld-login>.ld-wrapper>.ld-header>.wrapper{
-    max-width: var(--ld-main-wrapper);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-.ld-login>.ld-wrapper>.ld-header>.wrapper>.image-wrapper{
-    height: var(--ld-header-size);
-    padding: 16px 0;
-}
-.ld-login>.ld-wrapper>.ld-header>.wrapper>.image-wrapper>.image{
-    height: 100%;
-}
-.ld-login>.ld-wrapper>.main-content{
-    padding-top: var(--ld-header-size);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
 .ld-login>.ld-wrapper>.main-content>.left{
-    padding-top: 48px;
+    font-family: var(--ld-font-family-base);
+    max-width: 460px;
+    margin: 0 auto;
+}
+.ld-login>.ld-wrapper>.main-content>.left>.radio-buttons>.buttons{
+    margin-bottom: 42px;
 }
 
-
-.ld-login>.ld-wrapper>.main-content>.right{
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    
+.ld-login>.ld-wrapper>.main-content>.left>.radio-buttons>.title{
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-family: var(--ld-font-family-base);
+    font-weight: 800;
+    margin-bottom: 16px;
 }
 
+.ld-login>.ld-wrapper>.main-content>.left>.radio-buttons>.buttons>.ld-radio{
+    margin-right: 70px;
+}
 
-.ld-login>.ld-wrapper>.main-content>.right>.image{
-    min-width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.ld-login>.ld-wrapper>.main-content>.left>.main-title{
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.ld-login>.ld-wrapper>.main-content>.left>.main-title>.up{
+    font-size: calc(var(--ld-font-size-base) + 38px);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.ld-login>.ld-wrapper>.main-content>.left>.main-title>.down{
+    font-size: calc(var(--ld-font-size-base) + 22px);
+}
+
+.ld-login>.ld-wrapper>.main-content>.left>.steps{
+    display: block;
+    font-weight: bold;
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    color: var(--ld-color-gray);
+    margin-bottom: 12px;
 }
