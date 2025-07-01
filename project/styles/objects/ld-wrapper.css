@@ -7,6 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.ld-wrapper>.main-content.-one-col{
+    padding-top: var(--ld-header-size);
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .ld-wrapper>.main-content>.left{
     padding-top: 48px;
 }
