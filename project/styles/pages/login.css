@@ -1,7 +1,7 @@
 .ld-login>.ld-wrapper>.main-content>.left{
     font-family: var(--ld-font-family-base);
     max-width: 460px;
-    margin: 0 auto;
+    margin: auto;
 }
 .ld-login>.ld-wrapper>.main-content>.left>.radio-buttons>.buttons{
     margin-bottom: 42px;

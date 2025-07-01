@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Styles ITCSS -->
+    <!-- Settings -->
+    <link rel="stylesheet" href="styles/settings/text.css" />
+    <link rel="stylesheet" href="styles/settings/color.css" />
+    <link rel="stylesheet" href="styles/settings/core.css" />
+    <link rel="stylesheet" href="styles/settings/wrapper.css" />
+    <!-- Generic -->
+    <link rel="stylesheet" href="styles/generic/reset.css" />
+    <link rel="stylesheet" href="styles/generic/border-box.css" />
+    <!-- Base -->
+    <link rel="stylesheet" href="styles/base/html.css" />
+    <!-- Objects -->
+    <link rel="stylesheet" href="styles/objects/ld-wrapper.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="styles/components/ld-header.css" />
+    <link rel="stylesheet" href="styles/components/ld-button.css" />
+    <link rel="stylesheet" href="styles/components/ld-input.css" />
+    <!-- Pages -->
+    <link rel="stylesheet" href="styles/pages/create.css" />
+    <!-- Trumps -->
+  </head>
+  <body>
+    <div class="ld-create">
+      <div class="ld-wrapper">
+        <header class="ld-header">
+          <div class="wrapper">
+            <div class="logo-wrapper">
+              <img class="image" src="assets/logo/devfreela.svg" alt="Logo"></img>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <a class="back-btn material-symbols-outlined" href="list.html">
+            chevron_left
+          </a>
+          <div class="left">
+            <h1 class="main-title">
+              Create your new project!
+            </h1>
+
+            <input type="text" class="ld-input" placeholder="Title">
+            <input type="text" class="ld-input" placeholder="Total price">
+            <textarea class="ld-input" placeholder="Description"></textarea>
+            <button class="ld-button">Continue</button>
+          </div>
+          <div class="right"><img class="image" src="assets/image/bg-float-cubes.png" alt="Backgorund for login/singup"></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
