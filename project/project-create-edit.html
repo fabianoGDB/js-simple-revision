@@ -48,14 +48,14 @@
           <a class="back-btn material-symbols-outlined" href="list.html">
             chevron_left
           </a>
-          <div class="left">
+          <form class="left" onsubmit="Create()" action="javascript:void(0)">
             <h1 id="main-title" class="main-title"></h1>
 
-            <input type="text" class="ld-input" placeholder="Title">
-            <input type="text" class="ld-input" placeholder="Total price">
-            <textarea class="ld-input" placeholder="Description"></textarea>
-            <button id="action-button" class="ld-button"></button>
-          </div>
+            <input required id="title" type="text" class="ld-input" placeholder="Title">
+            <input required id="totalPrice" type="text" class="ld-input" placeholder="Total price">
+            <textarea required id="description" class="ld-input" placeholder="Description"></textarea>
+            <button id="action-button" class="ld-button" type="submit"></button>
+          </form>
           <div class="right"><img class="image" src="assets/image/bg-float-cubes.png" alt="Backgorund for login/singup"></div>
         </main>
       </div>
