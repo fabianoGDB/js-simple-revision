@@ -1,19 +1,19 @@
-.ld-create{
+.ld-project-create-edit{
     font-family: var(--ld-font-family-base);
 }
 
-.ld-create>.ld-wrapper>.main-content>.left{
+.ld-project-create-edit>.ld-wrapper>.main-content>.left{
     max-width: 368px;
     margin: auto;
 }
 
-.ld-create>.ld-wrapper>.main-content>.left>.main-title{
+.ld-project-create-edit>.ld-wrapper>.main-content>.left>.main-title{
     font-size: calc(var(--ld-font-size-base) + 32px);
     font-weight: 800;
     max-width: 415px;
     margin-bottom: 40px;
 }
 
-.ld-create>.ld-wrapper>.main-content>.left>.ld-button{
+.ld-project-create-edit>.ld-wrapper>.main-content>.left>.ld-button{
     margin-top: 20px;
 }

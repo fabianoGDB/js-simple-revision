@@ -31,6 +31,8 @@
     <!-- Pages -->
     <link rel="stylesheet" href="styles/pages/login.css" />
     <!-- Trumps -->
+
+    <script src="scripts/login.js"></script>
   </head>
   <body>
     <div class="ld-login">
@@ -43,36 +45,34 @@
           </div>
         </header>
         <main class="main-content">
-          <div class="left">
+          
+          <form class="left" onsubmit="Create()" action="javascript:void(0)">
             <span class="steps">STEP 1 OF 2</span>
             <h1 class="main-title">
               <span class="up">Hello!</span>
               <span class="down">Regsiter in the form now!</span>
             </h1>
-
-            <div class="radio-buttons">
-              <h3 class="title">What is your profile</h3>
-              <div class="buttons">
-                <label class="ld-radio">
-                  Dev
-                  <input name="role" type="radio">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="ld-radio">
-                  Client
-                  <input name="role" type="radio">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="radio-buttons">
+                <h3 class="title">What is your profile</h3>
+                <div class="buttons">
+                  <label class="ld-radio">
+                    Dev
+                    <input name="role" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="ld-radio">
+                    Client
+                    <input name="role" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <input type="text" class="ld-input" placeholder="Title">
-            <input type="date" class="ld-input" placeholder="Birth Date">
-            <input type="email" class="ld-input" placeholder="Email">
-            <input type="password" class="ld-input" placeholder="Password">
-            <a href="list.html">
-              <button class="ld-button">Continue</button>
-            </a>
-          </div>
+              <input required id="fullName" type="text" class="ld-input" placeholder="Full Name">
+              <input required id="birthdate" type="date" class="ld-input" placeholder="Birth Date">
+              <input required id="email" type="email" class="ld-input" placeholder="Email">
+              <input required id="password" type="password" class="ld-input" placeholder="Password">
+              <button type="submit" class="ld-button">Continue</button>
+            </form>
           <div class="right"><img class="image" src="assets/image/bg-cubes.png" alt="Backgorund for login/singup"></div>
         </main>
       </div>

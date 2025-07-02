@@ -29,11 +29,13 @@
     <link rel="stylesheet" href="styles/components/ld-button.css" />
     <link rel="stylesheet" href="styles/components/ld-input.css" />
     <!-- Pages -->
-    <link rel="stylesheet" href="styles/pages/create.css" />
+    <link rel="stylesheet" href="styles/pages/project-create-edit.css" />
     <!-- Trumps -->
+
+    <script src="scripts/project-create-edit.js"></script>
   </head>
   <body>
-    <div class="ld-create">
+    <div class="ld-project-create-edit">
       <div class="ld-wrapper">
         <header class="ld-header">
           <div class="wrapper">
@@ -47,14 +49,12 @@
             chevron_left
           </a>
           <div class="left">
-            <h1 class="main-title">
-              Create your new project!
-            </h1>
+            <h1 id="main-title" class="main-title"></h1>
 
             <input type="text" class="ld-input" placeholder="Title">
             <input type="text" class="ld-input" placeholder="Total price">
             <textarea class="ld-input" placeholder="Description"></textarea>
-            <button class="ld-button">Continue</button>
+            <button id="action-button" class="ld-button"></button>
           </div>
           <div class="right"><img class="image" src="assets/image/bg-float-cubes.png" alt="Backgorund for login/singup"></div>
         </main>
