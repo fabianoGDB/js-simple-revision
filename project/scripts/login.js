@@ -1,3 +1,4 @@
+
 function CheckForAnyRole(){
     let radioButtonList = document.getElementsByName("role");
     let counter = 0;
@@ -15,7 +16,7 @@ function Create(){
 
 
     if(CheckForAnyRole() === false){
-        alert("Choose a role!");
+        Swal.fire('Choose a role!','error');
         return;
     }
 
@@ -36,10 +37,22 @@ function Create(){
     })
     .then(response => response.json())
     .then(response => {
-        localStorage.setItem("user.name", response.fullName);
-        localStorage.setItem("user.role", response.role === "dev" ? "Developer" : "Client");
 
-        window.location.href = "list.html";
+        Swal.fire({
+            title: "Good Job!",
+            text: "User created!",
+            icon: "success",
+            confirmButtonText: "Ok!"
+            }).then((result) => {
+            if (result.isConfirmed) {
+                    localStorage.setItem("user.name", response.fullName);
+                    localStorage.setItem("user.role", response.role === "dev" ? "Developer" : "Client");
+                    localStorage.setItem("user.id", response.id);
+            
+                    window.location.href = "list.html";
+                }
+            });
+
     })
     .catch(error => {
         console.log(error)

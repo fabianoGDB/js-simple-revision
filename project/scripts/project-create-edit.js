@@ -42,7 +42,7 @@ function CreateOrEdit(){
         title: document.querySelector("#title").value,
         description: document.querySelector("#description").value,
         totalCost: document.querySelector("#totalPrice").value,
-        idClient: "1"
+        idClient: localStorage.getItem("user.id")
     }
 
     fetch(`https://6864b9585b5d8d03397e05dc.mockapi.io/api/projects${screenType === 'edit' ? ('/'+params.id) : ''}`, {
