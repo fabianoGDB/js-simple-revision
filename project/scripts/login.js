@@ -36,7 +36,10 @@ function Create(){
     })
     .then(response => response.json())
     .then(response => {
-        console.log(response)
+        localStorage.setItem("user.name", response.fullName);
+        localStorage.setItem("user.role", response.role === "dev" ? "Developer" : "Client");
+
+        window.location.href = "list.html";
     })
     .catch(error => {
         console.log(error)

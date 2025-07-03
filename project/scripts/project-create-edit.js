@@ -1,5 +1,12 @@
+const urlSearchParams =  new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+const screenType = params.id ? 'edit' : 'create';
+
 window.onload = function(){
-    const screenType = 'create';
+    SetScreenType();
+}
+
+function SetScreenType(){
     let mainTitle = document.querySelector('#main-title');
 
     if(screenType == 'create')
@@ -8,17 +15,14 @@ window.onload = function(){
         document.querySelector('#action-button').innerText = "Create";
     }
 
-
-
-    // if(screenType == 'edit')
-    // {
-    //     mainTitle.innerText = "Edit project!";
-    //     document.querySelector('#action-button').innerText = "Save";
-    // }
+    if(screenType == 'edit')
+    {
+        mainTitle.innerText = "Edit project!";
+        document.querySelector('#action-button').innerText = "Save";
+    }
 }
 
-
-function Create(){
+function CreateOrEdit(){
 
 
     let payload = {
@@ -28,8 +32,8 @@ function Create(){
         idClient: "1"
     }
 
-    fetch("https://6864b9585b5d8d03397e05dc.mockapi.io/api/projects", {
-        method: "POST",
+    fetch(`https://6864b9585b5d8d03397e05dc.mockapi.io/api/projects${screenType === 'edit' ? ('/'+params.id) : ''}`, {
+        method: screenType === 'edit' ? "PUT" : "POST",
         body: JSON.stringify(payload),
         headers: {
             'Content-Type': 'application/json'
@@ -37,7 +41,8 @@ function Create(){
     })
     .then(response => response.json())
     .then(response => {
-        console.log(response)
+
+        window.location.href = "list.html"
     })
     .catch(error => {
         console.log(error)
